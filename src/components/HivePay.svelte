@@ -12,24 +12,24 @@
 
 	function openHivePayWindow(evt: Event) {
 		evt.preventDefault();
-		window.open(apiUrl, 'hivePay', 'width=600,height=800');
+		window.open(apiUrl, 'hivepay-popup', 'width=600,height=800');
 		form.submit();
 	}
 </script>
 
-<form method='post' action='{apiUrl}' target='hivePay' bind:this={form}>
+<form method='post' action='{apiUrl}' target='hivepay-popup' bind:this={form}>
 	<input type='hidden' name='merchant' value='hivequebec'>
 	<input type='hidden' name='item_name' value={name}>
 	<input type='hidden' name='description' value={description}>
 	<input type='hidden' name='notify_url' value=''>
-	<input type='hidden' name='return_url' value='{location}?success=true'>
+	<input type='hidden' name='return_url' value='{location}/success'>
 	<input type='hidden' name='amount' value={price}>
 	<input type='hidden' name='base_currency' value={baseCurrency}>
 	<input type='hidden' name='merchant_email' value='sacha.pignot@protonmail.com'>
 	<input type='hidden' name='merchant_image' value='{merchantImage}'>
 	<input type='hidden' name='pay_currency' value={payCurrency}>
 	<input type='hidden' name='merchant_name' value='Hive Québec'>
-	<input type='hidden' name='cancel_url' value='{location}?cancel=true'>
+	<input type='hidden' name='cancel_url' value='{location}/cancel'>
 	<input type='image' on:click={openHivePayWindow} src='https://hivepay.io/buttons/16.png' alt='Pay With HivePay'>
 </form>
 
