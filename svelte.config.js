@@ -8,12 +8,17 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
-
+		adapter: adapter({
+			// default options are shown
+			pages: "build",
+			assets: "build",
+			fallback: null,
+			precompress: false
+		}),
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
-		},
+		}
 	}
 };
 
