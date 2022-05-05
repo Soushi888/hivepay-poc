@@ -1,18 +1,9 @@
-# create-svelte
+# HivePay Proof of COncept
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a little PoC of [HivePay](https://hivepay.io) made with [Svelte Kit](https://kit.svelte.dev).
 
-## Creating a project
+Three test products are in the `product` store.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
 
 ## Developing
 

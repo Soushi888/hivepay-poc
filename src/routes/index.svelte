@@ -3,15 +3,26 @@
 </script>
 
 <script>
-import Header from '../components/Header.svelte';
-import ProductList from '../components/ProductList.svelte';
+	import { page } from '$app/stores';
+	import Header from '../components/Header.svelte';
+	import ProductsList from '../components/ProductsList.svelte';
+	import Cancel from '../components/Cancel.svelte';
+
+	let isCancel = $page.url.searchParams.get('cancel');
+	let isSucces = $page.url.searchParams.get('success');
 </script>
 
 <svelte:head>
-	<title>Hive Pay PoC</title>
+	<title>HivePay PoC</title>
 </svelte:head>
 
 <section>
 	<Header />
-	<ProductList />
+	<ProductsList />
+	{#if (isCancel)}
+		<Cancel />
+	{/if}
+	{#if (isSucces)}
+		<Cancel />
+	{/if}
 </section>

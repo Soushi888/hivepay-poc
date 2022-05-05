@@ -3,32 +3,41 @@ import { type Writable, writable } from 'svelte/store';
 export type Product = {
 	name: string,
 	description: string,
+	imageUrl: string,
 	price: number,
-	currency: string
+	baseCurrency: string,
+	payCurrency: string | string[]
 }
 
 function ProductStore() {
 	const products: Writable<Product[]> = writable([
 		{
-			name: 'product 1',
-			description: 'lorem ipsum',
-			price: 2,
-			currency: 'HBD'
+			name: 'Chandail',
+			description: 'Chandail à manches courtes.',
+			imageUrl: 'https://cdn.pixabay.com/photo/2015/12/14/21/59/t-shirt-template-1093333_960_720.png',
+			price: 5,
+			baseCurrency: 'USD',
+			payCurrency: 'HBD'
 		},
 		{
-			name: 'product 2',
-			description: 'lorem ipsum',
+			name: 'Livre',
+			description: 'Livre passionnant à lire.',
+			imageUrl: 'https://cdn.pixabay.com/photo/2014/04/02/14/12/book-306468_960_720.png',
 			price: 5,
-			currency: "HIVE"
+			baseCurrency: 'CAD',
+			payCurrency: 'HIVE'
+		},
+		{
+			name: 'Sandwich',
+			description: 'Délicieux sandwich à manger.',
+			imageUrl: 'https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg',
+			price: 8,
+			baseCurrency: 'CAD',
+			payCurrency: ['HIVE', 'HBD']
 		}
 	]);
 
-	const updateProducts = (data: Product[]) => {
-		products.set(data);
-	};
-
-
-	return { products, updateProducts };
+	return { products };
 }
 
 export default ProductStore();
