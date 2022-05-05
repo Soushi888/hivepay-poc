@@ -5,7 +5,7 @@
 	export let product: Product;
 	let { name, description, price, baseCurrency, payCurrency } = product;
 
-	let form;
+	let form: HTMLFormElement;
 	let location = $page.url.origin;
 	let merchantImage = 'https://images.hive.blog/p/FxX5caie56ynwsjysm2XuNozdMysq1YNDRbt9X9VeerNm1981Q9QbBMAae56reruh3oPEPxXcntWKcGMSHj6xjDsn1Q6pWLBn3bCbY8qCcCe?width=128&height=128';
 	let apiUrl = 'https://hivepay.io/purchase/';
