@@ -3,7 +3,7 @@
 	import type { Product } from '../stores/product.store';
 
 	export let product: Product;
-	let { productName, description, price, baseCurrency, payCurrency } = product;
+	let { name, description, price, baseCurrency, payCurrency } = product;
 
 	let form;
 	let location = $page.url.origin;
@@ -19,7 +19,7 @@
 
 <form method='post' action='{apiUrl}' target='hivePay' bind:this={form}>
 	<input type='hidden' name='merchant' value='hivequebec'>
-	<input type='hidden' name='item_name' value={productName}>
+	<input type='hidden' name='item_name' value={name}>
 	<input type='hidden' name='description' value={description}>
 	<input type='hidden' name='notify_url' value=''>
 	<input type='hidden' name='return_url' value='{location}?success=true'>
