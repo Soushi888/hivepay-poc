@@ -34,6 +34,14 @@ function ProductStore() {
 			price: 8,
 			baseCurrency: 'CAD',
 			payCurrency: ['HIVE', 'HBD']
+		},
+		{
+			name: 'Bouclier',
+			description: 'Un super écu protecteur',
+			imageUrl: 'https://cdn.pixabay.com/photo/2016/02/29/04/00/gothic-1228022_960_720.jpg',
+			price: 12,
+			baseCurrency: 'ECU',
+			payCurrency: ['HIVE', 'HBD', 'ECU']
 		}
 	]);
 
