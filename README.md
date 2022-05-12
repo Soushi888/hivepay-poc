@@ -1,8 +1,10 @@
-# HivePay Proof of COncept
+# HivePay Proof of Concept
 
 This is a little PoC of [HivePay](https://hivepay.io) made with [Svelte Kit](https://kit.svelte.dev).
 
-Three test products are in the `product` store.
+Three test products are in the `product` store that is located here : `src/stores`.
+
+[Demo](https://hivepay-poc.netlify.app)
 
 
 ## Developing
