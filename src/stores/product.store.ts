@@ -35,11 +35,12 @@ export const productStore: Writable<Product[]> = writable([
 		payCurrency: ['HIVE', 'HBD']
 	},
 	{
-		name: 'Bouclier',
-		description: 'Un super écu protecteur',
-		imageUrl: 'https://cdn.pixabay.com/photo/2016/02/29/04/00/gothic-1228022_960_720.jpg',
-		price: 12,
-		baseCurrency: 'ECU',
-		payCurrency: ['HIVE', 'HBD', 'ECU']
+		name: "Abonnement à l'École du Consensus Blockchain",
+		description: "Abonnement de 1 an à l'École du Consensus Blockchain",
+		imageUrl:
+			'https://images.squarespace-cdn.com/content/v1/6286accbc0a5324bacbd9249/0d84477b-8e31-46c1-a3a1-1584cd4e7026/ECB_banner_1.png?format=1000w',
+		price: 120,
+		baseCurrency: 'CAD',
+		payCurrency: ['HIVE', 'HBD', 'THIA']
 	}
 ]);

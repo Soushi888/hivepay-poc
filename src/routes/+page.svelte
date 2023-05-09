@@ -8,8 +8,8 @@
 	<title>HivePay PoC</title>
 </svelte:head>
 
-	<Header />
-	<main>
-		<ProductsList />
-	</main>
-	<Footer />
+<Header />
+<main>
+	<ProductsList />
+</main>
+<Footer />

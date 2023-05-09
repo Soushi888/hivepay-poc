@@ -9,16 +9,16 @@
 </section>
 
 <style>
-    section {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
+	section {
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
 
-    h3 {
-        margin-top: 20px;
-        color: red;
-        font-size: 2rem;
-    }
+	h3 {
+		margin-top: 20px;
+		color: red;
+		font-size: 2rem;
+	}
 </style>
