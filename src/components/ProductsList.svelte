@@ -1,12 +1,11 @@
 <script lang='ts'>
-	import  ProductStore from '../stores/product.store';
+	import  {productStore} from '../stores/product.store';
 	import ProductCard from './ProductCard.svelte';
-	let {products} = ProductStore
 </script>
 
 <section>
 	<div class='grid'>
-		{#each $products as product}
+		{#each $productStore as product}
 			<ProductCard product={product} />
 		{/each}
 	</div>

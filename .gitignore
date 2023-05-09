@@ -6,7 +6,5 @@ node_modules
 .env
 .env.*
 !.env.example
-.vercel
-.output
-/.idea
-/.netlify
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

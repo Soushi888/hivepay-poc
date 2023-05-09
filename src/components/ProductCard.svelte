@@ -1,7 +1,8 @@
 <script lang='ts'>
+	import type { Product } from '../stores/product.store';
 	import HivePay from './HivePay.svelte';
 
-	export let product;
+	export let product: Product;
 </script>
 
 <div class='product-card'>
